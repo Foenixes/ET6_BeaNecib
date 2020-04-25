@@ -8,7 +8,9 @@
 
 void init_enigme(enigme * e)
 {
-	e= ( p.x=0, p.y=0, img=NULL);
+	e=p.x=0;
+	e=p.y=0;
+	e=img=NULL;
 }
 
  void generate_afficher (SDL_Surface * screen  , char image [],enigme *e,int *alea)
