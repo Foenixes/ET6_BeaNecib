@@ -8,9 +8,9 @@
 
 void init_enigme(enigme * e)
 {
-	e=p.x=0;
-	e=p.y=0;
-	e=img=NULL;
+	e->p.x=0;
+	e->p.y=0;
+	e->img=NULL;
 }
 
  void generate_afficher (SDL_Surface * screen  , char image [],enigme *e,int *alea)
@@ -112,14 +112,14 @@ break;
         SDL_Flip(screen);
  	if (r==s)
  	{
-	en_img=IMG_Load("00.jpg"); // image de : vous avez repondu correctement
+	en->img=IMG_Load("00.jpg"); // image de : vous avez repondu correctement
  		SDL_BlitSurface(en=img, NULL, screen, &(en_p)) ;
         SDL_Flip(screen);
  		} 	
  	else
  	{
- 		en_img=IMG_Load("11.jpg"); // image de : vous avez répondu faux
- 		SDL_BlitSurface(en=img, NULL, screen, &(en_p)) ;
+ 		en->img=IMG_Load("11.jpg"); // image de : vous avez répondu faux
+ 		SDL_BlitSurface(en->img, NULL, screen, &(en->p)) ;
         SDL_Flip(screen);
  	}
  }
