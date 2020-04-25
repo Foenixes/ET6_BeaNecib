@@ -28,5 +28,5 @@ int initialiser_enigmes();
 void generation(enigme *E,int val);
 void affichage(enigme *E ,int val);
 int resolution_enigmes(char reponse_choisie[4], int val,enigme *E);// 
-
+void free_enigme;
 #endif  /* ENIGME_H_ */
