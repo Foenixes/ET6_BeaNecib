@@ -9,7 +9,7 @@ typedef struct
 {
  SDL_Surface * img;
  SDL_Rect p;
-}enigme;
+} enigme;
 int enigm(SDL_Surface * screen);
 void init_enigme(enigme * e) ;
 void  generate_afficher (SDL_Surface * screen  , char image [],enigme *e,int *alea) ;
