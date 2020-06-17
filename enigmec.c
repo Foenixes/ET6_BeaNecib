@@ -1,5 +1,5 @@
 /**
-* @file enigme.c
+* @file enigmec.c
 */
 
 #include<stdio.h>
