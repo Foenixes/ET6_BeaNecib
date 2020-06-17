@@ -1,9 +1,9 @@
 /**
 * @file sauvegarde.h
 * @brief Testing Program.
-* @author C Team
+* @author Foenixes
 * @version 0.1
-* @date Apr 01, 2015
+* @date June 07, 2020
 *
 * structure perso
 *
@@ -21,4 +21,5 @@
 #include <SDL/SDL_image.h>
 #include <SDL/SDL_ttf.h>
 #include <SDL/SDL_mixer.h>
-
+#include "entite.h"
+#include "perso.h"
