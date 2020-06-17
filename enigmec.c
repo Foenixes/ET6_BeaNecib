@@ -1,3 +1,7 @@
+/**
+* @file enigme.c
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -6,12 +10,26 @@
 #include <SDL/SDL_image.h>
 #include "enigme.h"
 
+/**
+* @brief for the enigme.
+* @param e the enigme
+* @return Nothing
+*/
+
 void init_enigme(enigme * e)
 {
 	e->p.x=0;
 	e->p.y=0;	
 	e->img=NULL;
 }
+
+/**
+* @brief to generate the enigme.
+* @param alea for the aleatory enigme.
+* @param screen to load image.
+* @param e the enigme
+* @return Nothing
+*/
 
  void generate_afficher (SDL_Surface * screen  , char image [],enigme *e,int *alea)
 { 
@@ -25,6 +43,12 @@ e->img = IMG_Load(image);
   SDL_Flip(screen) ;
 }
  
+/**
+* @brief for the solution.
+* @param quest enigme.
+* @return Nothing
+*/
+
  int solution_e (char image [],int *ques)
  {
  	int solution =0 ;
@@ -47,6 +71,13 @@ e->img = IMG_Load(image);
  }
 return solution;
 }
+
+/**
+* @brief for the resolution.
+* @param r for the result.
+* @return Nothing
+*/
+
 int resolution (int * running,int *run )
 {
 	SDL_Event event ;
@@ -84,6 +115,14 @@ doing=0;
   return r ;
 }
  
+/**
+* @brief for the result enigme.
+* @param s for the solution.
+* @param r for the result.
+* @param en for the enigme.
+* @return Nothing
+*/
+
  int afficher_resultat (SDL_Surface * screen,int s,int r,enigme *en,int ques)
  {SDL_Surface * image=NULL;
  switch(ques){
